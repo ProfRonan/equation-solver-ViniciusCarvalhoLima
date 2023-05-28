@@ -1,15 +1,15 @@
 Grau = int(input("Grau da Equação:\n"))
 if Grau not in range (1,3):
         print("Grau inválido")
-elif Grau == 1:
-    print("A equação é do primeiro grau")
-    a = int(input("Digite valor de A:\n"))
-    if a == int(0):
-        print("Valor de a inválido")
-    b = int(input("Digite valor de B:\n"))
-    r1 = -b/a 
-    arredondado = round(r1, 2)
-    print(arredondado)
+elif Grau ==1:
+    print('Equação do primeiro grau')
+    a = int(input('Digite o valor de a:\n'))
+    if a ==0:
+        print('Valor Inválido.')
+    else:
+        b = float(input('Digite o valor de b:\n'))
+        x = -b / -a
+        print(f"o valor da raiz é {x:.2f}")
     
 elif Grau == 2:
     print("A equação é do segundo grau")
